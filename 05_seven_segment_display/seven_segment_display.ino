@@ -1,5 +1,5 @@
 // Author: Chat-Gpt
-// Description: 4-LED blinking with alternating pattern
+// Description: printing count from 9 to 0 in a seven segment display with a problem of no detail of the manufacture sheet
 // Board: Arduino UNO
 // Pins for 7-segment (Common Anode)
 int segA = 2;
