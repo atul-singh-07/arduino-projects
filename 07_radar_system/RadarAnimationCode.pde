@@ -1,3 +1,4 @@
+// Description: Radar animation code completely made by chat gpt
 import processing.serial.*;
 
 Serial myPort;
@@ -62,3 +63,4 @@ void serialEvent(Serial myPort) {
     }
   }
 }
+
