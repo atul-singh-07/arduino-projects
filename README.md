@@ -1,118 +1,181 @@
-# Arduino Projects 🚀
+<div align="center">
 
-A collection of **Arduino-based hardware projects** built to understand real-world electronics, embedded systems, and hardware–software integration.  
-These projects focus on **learning by doing**, problem-solving, and practical implementation of sensors, actuators, and microcontrollers.
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Arduino+Projects+%7C+atul-singh-07;Embedded+Systems+%7C+Sensors+%7C+Actuators;Learning+by+Building+Real+Hardware)
 
-This repository is intended for:
-- Beginners learning Arduino & electronics
-- Recruiters reviewing hands-on embedded projects
-- Students exploring hardware-based problem solving
+![LANGUAGE](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![PLATFORM](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+![STATUS](https://img.shields.io/badge/STATUS-ACTIVE-00d9ff?style=for-the-badge)
+![PROJECTS](https://img.shields.io/badge/PROJECTS-08-00ff88?style=for-the-badge)
 
----
-
-## 📌 Overview
-
-Arduino is widely used for rapid prototyping and embedded system development.  
-This repository showcases multiple Arduino projects that demonstrate:
-
-- Interfacing sensors and modules  
-- Writing efficient Arduino (C/C++) code  
-- Debugging hardware and wiring issues  
-- Designing basic real-world systems  
-
-Each project is organized with **code, circuit diagrams, images, and documentation** for clarity and reproducibility.
+</div>
 
 ---
 
-## 🧠 Skills Demonstrated
+## `OVERVIEW`
 
-- Embedded Systems Programming  
-- Arduino (C/C++)  
-- Sensor Interfacing  
-- Circuit Design & Debugging  
-- Hardware–Software Integration  
-- Logical Thinking & Problem Solving  
-- Documentation & Project Structuring  
+> A hands-on collection of Arduino embedded systems projects —
+> built from scratch to understand real hardware, sensors,
+> actuators, and hardware-software integration.
+> Each project is a step deeper into embedded systems.
 
----
-
-## 🧰 Tools & Technologies Used
-
-- Arduino Uno / Nano  
-- Arduino IDE  
-- Sensors (Ultrasonic, IR, PIR, etc.)  
-- Servo Motors, Buzzers, LEDs  
-- Breadboard & Jumper Wires  
-- Serial Monitor for debugging  
-- Git & GitHub for version control  
+```
+PLATFORM  : Arduino Uno / Nano
+LANGUAGE  : C++ (Arduino Framework)
+IDE       : Arduino IDE + VS Code
+FOCUS     : Sensors · Actuators · Logic · Control
+COMMITS   : 33
+```
 
 ---
 
-## 📂 Project List
+## `PROJECT INDEX`
 
-| No. | Project Name | Description |
-
-| 01 | **LED Blink** | Basic Arduino project to understand digital output, timing, and microcontroller pin control. |
-| 02 | **Traffic Light System** | Simulates real-world traffic light logic using LEDs and timed sequences. |
-| 03 | **DHT11 Sensor** | Reads temperature and humidity data using the DHT11 sensor and displays values via Serial Monitor. |
-| 04 | **RGB LED Control** | Controls RGB LED colors by varying PWM signals to mix different color combinations. |
-| 05 | **Seven Segment Display** | Displays numeric values using a seven-segment display with proper pin mapping. |
-| 06 | **Servo Motor Control** | Demonstrates angular control of a servo motor using Arduino PWM signals. |
-| 07 | **Radar System** | Uses an ultrasonic sensor and servo motor to detect objects and measure distance in different directions. |
-| 08 | **Joystick LED Control** | Controls LED behavior based on joystick input values (analog and digital signals). |
-
-Each project folder contains:
-- Arduino source code (`.ino`)
-- Circuit diagram (if applicable)
-- Project images
-- Individual README explaining working and logic
-
-Each project folder contains:
-- Source code (`.ino`)
-- Circuit diagram
-- Project images
-- Individual README with explanation
+| # | Project | Hardware Used | Concept |
+|---|---|---|---|
+| 00 | **Arduino Info** | — | Reference notes & pin mapping |
+| 01 | **LED Blink** | LED, Resistor | Digital output, timing |
+| 02 | **Traffic Light System** | 3x LEDs | Timed logic sequences |
+| 03 | **DHT11 Sensor** | DHT11 | Sensor interfacing, Serial monitor |
+| 04 | **RGB LED Control** | RGB LED | PWM signals, color mixing |
+| 05 | **Seven Segment Display** | 7-Seg Display | Pin mapping, numeric output |
+| 06 | **Servo Motor Control** | SG90 Servo | PWM, angular position control |
+| 07 | **Ultrasonic Radar System** | HC-SR04, Servo | Distance sensing + rotation |
+| 08 | **Joystick LED Control** | Joystick Module | Analog + digital input reading |
 
 ---
 
-## 🗂️ Repository Structure
+## `PROJECT HIGHLIGHTS`
+
+### 📡 07 · Ultrasonic Radar System
+```
+Most complex project in this collection.
+Servo rotates continuously while HC-SR04
+measures distance at each angle — outputs
+a live radar-style sweep via Processing IDE.
+
+HARDWARE  : Arduino Uno + HC-SR04 + SG90 Servo
+SOFTWARE  : Arduino C++ + Processing (visualization)
+CONCEPT   : Sensor fusion + motor control + serial comm
+```
+
+---
+
+### 🌡️ 03 · DHT11 Temperature & Humidity Sensor
+```
+Reads real-world environmental data and
+displays live temperature + humidity values
+over Serial Monitor.
+
+HARDWARE  : Arduino Uno + DHT11 Sensor
+LIBRARY   : DHT sensor library
+CONCEPT   : Sensor communication, data parsing
+```
+
+---
+
+### 🕹️ 08 · Joystick LED Control
+```
+Reads both analog (X/Y axis) and digital
+(button press) signals from a joystick module
+to control LED behavior.
+
+HARDWARE  : Arduino Uno + KY-023 Joystick + LEDs
+CONCEPT   : Analog input, threshold detection
+```
+
+---
+
+## `SKILLS DEMONSTRATED`
+
+```
+[✓]  Embedded C++ programming
+[✓]  Digital & Analog I/O control
+[✓]  PWM signal generation
+[✓]  Sensor interfacing (DHT11, HC-SR04)
+[✓]  Actuator control (Servo, RGB LED)
+[✓]  Serial communication & debugging
+[✓]  Hardware circuit design & wiring
+[✓]  Multi-component system integration
+```
+
+---
+
+## `REPOSITORY STRUCTURE`
+
+```
 arduino-projects/
 │
-├── Project-Name/
-│ ├── code/
-│ ├── circuit/
-│ ├── images/
-│ └── README.md
+├── 00_arduino_info/          # Reference notes & pinout
+├── 01_led_blink/             # Digital output basics
+├── 02_traffic_light/         # Timed LED sequences
+├── 03_dht11_sensor/          # Temperature & humidity
+├── 04_rgb_led/               # PWM color control
+├── 05_seven_segment_display/ # Numeric display output
+├── 06_servo/                 # Servo motor control
+├── 07_radar_system/          # Ultrasonic radar sweep
+├── 08_joystick_led/          # Joystick input control
 │
 └── README.md
+```
 
-
+> Each folder contains the `.ino` source file with
+> inline comments explaining the logic step by step.
 
 ---
 
+## `HOW TO RUN`
 
-## 🚀 How to Use
+```bash
+# 1. Clone the repository
+git clone https://github.com/atul-singh-07/arduino-projects.git
 
+# 2. Open Arduino IDE
 
-1. Clone the repository
+# 3. Navigate to any project folder
+File → Open → select the .ino file
 
-->Open the project folder
-->Upload the .ino file using Arduino IDE
-->Connect components as per the circuit diagram
-->Run and observe the output
+# 4. Select board & port
+Tools → Board → Arduino Uno
+Tools → Port → (your COM port)
 
-#🔧 Future Improvements
+# 5. Upload
+Click Upload (→) and observe output
+```
 
-Add more advanced sensor-based projects
-Improve power efficiency
-Add IoT-enabled projects
-Provide simulation links (Tinkercad/Proteus)
+---
 
-🙌 Author
+## `LANGUAGES`
 
-Atul Singh
-Engineering Student | Embedded Systems & Arduino Enthusiast
+```
+C++          ████████████████████░   88.8%
+Processing   ████░░░░░░░░░░░░░░░░░   11.2%
+```
 
-🔗 GitHub: https://github.com/atul-singh-07
+> Processing is used for the **Radar System** visualization (Project 07)
 
-⭐ If you find these projects useful, feel free to star the repository!
+---
+
+## `WHAT'S NEXT`
+
+```
+[ ]  Motor driver (L298N) — DC motor speed control
+[ ]  I2C LCD display integration
+[ ]  IR remote control system
+[ ]  OLED display with SSD1306
+[ ]  ESP32 WiFi integration → IoT upgrade
+[ ]  PID line follower robot
+```
+
+---
+
+## `CONNECT`
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/atul-singh-o7)
+[![Portfolio](https://img.shields.io/badge/AtulOS-00d9ff?style=for-the-badge&logo=firefox&logoColor=black)](https://atul-singh-07.github.io)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/atul-singh-07)
+
+<sub>Part of the Atulos ecosystem · Built with real hardware · 2025</sub>
+
+</div>
